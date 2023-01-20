@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Main-Class: adianov.sergei.covidrisk.MainApp
+Class-Path: javafx-base-19-ea+7-win.jar maven-shade-plugin-3.2.4.jar mav
+ en-plugin-api-3.0.jar sisu-inject-plexus-1.4.2.jar sisu-inject-bean-1.4
+ .2.jar sisu-guice-2.1.7-noaop.jar maven-model-3.0.jar maven-core-3.0.ja
+ r maven-settings-3.0.jar maven-settings-builder-3.0.jar maven-repositor
+ y-metadata-3.0.jar maven-model-builder-3.0.jar maven-aether-provider-3.
+ 0.jar aether-impl-1.7.jar aether-spi-1.7.jar aether-api-1.7.jar aether-
+ util-1.7.jar plexus-interpolation-1.14.jar plexus-classworlds-2.2.3.jar
+  plexus-component-annotations-1.5.5.jar plexus-sec-dispatcher-1.3.jar p
+ lexus-cipher-1.4.jar maven-artifact-3.0.jar plexus-utils-3.3.0.jar mave
+ n-artifact-transfer-0.12.0.jar maven-common-artifact-filters-3.0.1.jar 
+ maven-shared-utils-3.1.0.jar commons-codec-1.11.jar slf4j-api-1.7.5.jar
+  asm-8.0.jar asm-commons-8.0.jar asm-tree-8.0.jar asm-analysis-8.0.jar 
+ jdom2-2.0.6.jar maven-dependency-tree-3.0.1.jar aether-util-0.9.0.M2.ja
+ r commons-io-2.6.jar jdependency-2.4.0.jar asm-util-8.0.jar guava-28.2-
+ android.jar failureaccess-1.0.1.jar listenablefuture-9999.0-empty-to-av
+ oid-conflict-with-guava.jar jsr305-3.0.2.jar checker-compat-qual-2.5.5.
+ jar error_prone_annotations-2.3.4.jar j2objc-annotations-1.3.jar common
+ s-lang3-3.7.jar poi-5.2.3.jar controlsfx-11.1.1.jar log4j-api-2.18.0.ja
+ r xmlbeans-5.1.1.jar javafx-controls-19-ea+7-win.jar javafx-swt.jar jav
+ afx.web.jar javafx.base.jar javafx.fxml.jar javafx.media.jar javafx.swi
+ ng.jar javafx.controls.jar javafx.graphics.jar commons-io-2.11.0.jar ex
+ ec-maven-plugin-3.1.0.jar plexus-utils-3.4.2.jar javafx-fxml-19-ea+7.ja
+ r graal-sdk-22.3.0.jar SparseBitSet-1.2.jar javafx-controls-19-ea+7.jar
+  commons-compress-1.21.jar native-maven-plugin-0.9.19.jar junit-platfor
+ m-native-0.9.19.jar junit-platform-console-1.8.1.jar junit-platform-rep
+ orting-1.8.1.jar apiguardian-api-1.1.2.jar junit-platform-launcher-1.8.
+ 1.jar junit-platform-engine-1.8.1.jar opentest4j-1.2.0.jar junit-platfo
+ rm-commons-1.8.1.jar junit-jupiter-5.8.1.jar junit-jupiter-api-5.8.1.ja
+ r junit-jupiter-params-5.8.1.jar junit-jupiter-engine-5.8.1.jar utils-0
+ .9.19.jar jackson-databind-2.13.3.jar jackson-annotations-2.13.3.jar ja
+ ckson-core-2.13.3.jar graalvm-reachability-metadata-0.9.19.jar svm-22.0
+ .0.jar graal-sdk-22.0.0.jar objectfile-22.0.0.jar pointsto-22.0.0.jar c
+ ompiler-22.0.0.jar truffle-api-22.0.0.jar native-image-base-22.0.0.jar 
+ formsfx-core-11.5.0.jar commons-math3-3.6.1.jar launch4j-maven-plugin-2
+ .2.0.jar launch4j-3.50-core.jar commons-beanutils-1.9.4.jar commons-log
+ ging-1.2.jar jgoodies-common-1.7.0.jar forms-1.2.1.jar flatlaf-1.0.jar 
+ ant-1.10.12.jar ant-launcher-1.10.12.jar xstream-1.4.19.jar mxparser-1.
+ 2.2.jar xmlpull-1.1.3.1.jar maven-artifact-transfer-0.13.1.jar maven-co
+ re-3.0.jar maven-model-3.0.jar maven-settings-3.0.jar maven-settings-bu
+ ilder-3.0.jar maven-repository-metadata-3.0.jar maven-plugin-api-3.0.ja
+ r maven-model-builder-3.0.jar maven-aether-provider-3.0.jar aether-impl
+ -1.7.jar aether-spi-1.7.jar aether-api-1.7.jar aether-util-1.7.jar sisu
+ -inject-plexus-1.4.2.jar sisu-inject-bean-1.4.2.jar sisu-guice-2.1.7-no
+ aop.jar plexus-interpolation-1.14.jar plexus-classworlds-2.2.3.jar plex
+ us-sec-dispatcher-1.3.jar plexus-cipher-1.4.jar maven-artifact-3.0.jar 
+ plexus-component-annotations-2.0.0.jar maven-common-artifact-filters-3.
+ 1.0.jar maven-shared-utils-3.1.0.jar commons-io-2.5.jar plexus-utils-3.
+ 3.0.jar slf4j-api-1.7.5.jar poi-ooxml-5.2.3.jar javafx-graphics-19-ea+7
+ .jar javafx-base-19-ea+7.jar commons-codec-1.15.jar javafx-fxml-19-ea+7
+ -win.jar curvesapi-1.07.jar commons-exec-1.3.jar poi-ooxml-lite-5.2.3.j
+ ar javafx-graphics-19-ea+7-win.jar commons-collections4-4.4.jar
+

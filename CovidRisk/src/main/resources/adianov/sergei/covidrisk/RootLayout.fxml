@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adianov.sergei.covidrisk.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Открыть" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Сохранить" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Сохранить как..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Закрыть" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" onAction="#handleAbout" text="Помощь">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
