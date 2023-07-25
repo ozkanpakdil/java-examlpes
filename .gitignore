@@ -12,3 +12,4 @@ mvnw*
 **/.classpath
 **/target/
 **/.factorypath
+.vscode/

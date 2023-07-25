@@ -1,5 +1,5 @@
 # how to compile
-run commands below first to generate the reflection jsons
+used java version 20.0.2, run commands below first to generate the reflection jsons
 ```shell
 mvn clean package
 mvn -Pnative -Dagent exec:exec@java-agent
