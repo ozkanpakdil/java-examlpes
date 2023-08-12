@@ -13,3 +13,4 @@ mvnw*
 **/target/
 **/.factorypath
 .vscode/
+**/*.iml

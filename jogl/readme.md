@@ -1,0 +1,46 @@
+getting error below which is not blocking the application start.
+```shell
+/snap/intellij-idea-community/451/jbr/bin/java -javaagent:/snap/intellij-idea-community/451/lib/idea_rt.jar=42527:/snap/intellij-idea-community/451/bin -Dfile.encoding=UTF-8 -classpath /home/oz-mint/projects/java-examlpes/jogl/target/classes:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt-main/2.3.2/gluegen-rt-main-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-aarch64.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-android-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-armv6hf.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-linux-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-macosx-universal.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-solaris-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/gluegen/gluegen-rt/2.3.2/gluegen-rt-2.3.2-natives-windows-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all-main/2.3.2/jogl-all-main-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-aarch64.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-android-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-armv6hf.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-linux-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-macosx-universal.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-solaris-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jogl/jogl-all/2.3.2/jogl-all-2.3.2-natives-windows-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl-main/2.3.2/jocl-main-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-android-aarch64.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-android-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-linux-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-linux-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-linux-armv6hf.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-linux-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-macosx-universal.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-solaris-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-solaris-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-windows-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/jocl/jocl/2.3.2/jocl-2.3.2-natives-windows-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal-main/2.3.2/joal-main-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-android-aarch64.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-android-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-linux-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-linux-armv6.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-linux-armv6hf.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-linux-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-macosx-universal.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-solaris-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-solaris-i586.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-windows-amd64.jar:/home/oz-mint/.m2/repository/org/jogamp/joal/joal/2.3.2/joal-2.3.2-natives-windows-i586.jar io.ozkanpakdil.JOGLfiveclass
+Exception in thread "AWT-EventQueue-0" com.jogamp.opengl.GLException: Caught IllegalAccessError: class io.ozkanpakdil.Utils (in unnamed module @0x2a95f00e) cannot access class com.jogamp.opengl.glu.GLU (in module jogl.all) because module jogl.all does not export com.jogamp.opengl.glu to unnamed module @0x2a95f00e on thread AWT-EventQueue-0
+	at jogl.all/com.jogamp.opengl.GLException.newGLException(GLException.java:76)
+	at jogl.all/jogamp.opengl.GLDrawableHelper.invokeGLImpl(GLDrawableHelper.java:1327)
+	at jogl.all/jogamp.opengl.GLDrawableHelper.invokeGL(GLDrawableHelper.java:1147)
+	at jogl.all/com.jogamp.opengl.awt.GLCanvas$12.run(GLCanvas.java:1442)
+	at jogl.all/com.jogamp.opengl.Threading.invoke(Threading.java:223)
+	at jogl.all/com.jogamp.opengl.awt.GLCanvas.display(GLCanvas.java:503)
+	at jogl.all/com.jogamp.opengl.awt.GLCanvas.paint(GLCanvas.java:557)
+	at java.desktop/sun.awt.RepaintArea.paintComponent(RepaintArea.java:264)
+	at java.desktop/sun.awt.X11.XRepaintArea.paintComponent(XRepaintArea.java:66)
+	at java.desktop/sun.awt.RepaintArea.paint(RepaintArea.java:240)
+	at java.desktop/sun.awt.X11.XComponentPeer.handleEvent(XComponentPeer.java:572)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5088)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:791)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:740)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:734)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:764)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:762)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:761)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+Caused by: java.lang.IllegalAccessError: class io.ozkanpakdil.Utils (in unnamed module @0x2a95f00e) cannot access class com.jogamp.opengl.glu.GLU (in module jogl.all) because module jogl.all does not export com.jogamp.opengl.glu to unnamed module @0x2a95f00e
+	at io.ozkanpakdil.Utils.checkOpenGLError(Utils.java:182)
+	at io.ozkanpakdil.Utils.prepareShader(Utils.java:114)
+	at io.ozkanpakdil.Utils.createShaderProgram(Utils.java:76)
+	at io.ozkanpakdil.JOGLfiveclass.init(JOGLfiveclass.java:56)
+	at jogl.all/jogamp.opengl.GLDrawableHelper.init(GLDrawableHelper.java:644)
+	at jogl.all/jogamp.opengl.GLDrawableHelper.init(GLDrawableHelper.java:667)
+	at jogl.all/com.jogamp.opengl.awt.GLCanvas$10.run(GLCanvas.java:1411)
+	at jogl.all/jogamp.opengl.GLDrawableHelper.invokeGLImpl(GLDrawableHelper.java:1291)
+	... 28 more
+
+```
