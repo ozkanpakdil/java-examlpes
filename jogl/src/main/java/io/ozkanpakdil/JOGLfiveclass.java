@@ -8,7 +8,8 @@ import com.jogamp.opengl.GLEventListener;
 import com.jogamp.opengl.awt.GLCanvas;
 
 import javax.swing.*;
-
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import static com.jogamp.opengl.GL4.GL_POINTS;
@@ -25,12 +26,23 @@ public class JOGLfiveclass extends JFrame implements GLEventListener {
         myCanvas = new GLCanvas();
         myCanvas.addGLEventListener(this);
         this.add(myCanvas);
+        this.addKeyListener(exitOnKeyEsc());
         this.setVisible(true);
+    }
+
+    private KeyAdapter exitOnKeyEsc() {
+        return new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                    dispose();//exit app if the key is esc
+            }
+        };
     }
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        System.setProperty("jogl.disable.openglcore", "false");
+//        System.setProperty("jogl.disable.openglcore", "false");
         JOGLfiveclass current_instance = new JOGLfiveclass();
     }
 
