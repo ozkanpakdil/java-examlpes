@@ -1,13 +1,15 @@
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Button;
+package com.mascix;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
 
-public class MavenSwt {
+public class HelloSwt {
 
-	protected Shell shell;
+	Shell shell;
 
 	/**
 	 * Launch the application.
@@ -16,7 +18,7 @@ public class MavenSwt {
 	 */
 	public static void main(String[] args) {
 		try {
-			MavenSwt window = new MavenSwt();
+			HelloSwt window = new HelloSwt();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -41,7 +43,7 @@ public class MavenSwt {
 	/**
 	 * Create contents of the window.
 	 */
-	protected void createContents() {
+	void createContents() {
 		shell = new Shell();
 		shell.setSize(450, 300);
 		shell.setText("SWT Application");
