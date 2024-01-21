@@ -18,35 +18,34 @@ public class Main {
 
     public static void main(String[] args) {
         executeQueries();
-
     }
 
     private static void executeQueries() {
         try (Session session = getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
 
-session.persist(Match.builder()
-        .homeTeamId(1)
-        .awayTeamId(2)
-        .awayScore(TeamScore.builder()
-                .id(TeamScoreId.builder()
-                        .matchId(1)
-                        .teamId(1)
-                        .build())
-                .goals(List.of(Goal.builder()
-                        .score(1)
-                        .build()))
-                .build())
-        .homeScore(TeamScore.builder()
-                .id(TeamScoreId.builder()
-                        .matchId(2)
-                        .teamId(2)
-                        .build())
-                .goals(List.of(Goal.builder()
-                        .score(2)
-                        .build()))
-                .build())
-        .build());
+            session.persist(Match.builder()
+                    .homeTeamId(1)
+                    .awayTeamId(2)
+                    .awayScore(TeamScore.builder()
+                            .id(TeamScoreId.builder()
+                                    .matchId(1)
+                                    .teamId(1)
+                                    .build())
+                            .goals(List.of(Goal.builder()
+                                    .score(1)
+                                    .build()))
+                            .build())
+                    .homeScore(TeamScore.builder()
+                            .id(TeamScoreId.builder()
+                                    .matchId(2)
+                                    .teamId(2)
+                                    .build())
+                            .goals(List.of(Goal.builder()
+                                    .score(2)
+                                    .build()))
+                            .build())
+                    .build());
             session.flush();
 
             transaction.commit();
