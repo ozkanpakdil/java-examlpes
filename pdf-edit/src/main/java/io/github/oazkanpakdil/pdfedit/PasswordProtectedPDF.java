@@ -12,14 +12,13 @@ import java.util.logging.Logger;
 
 public class PasswordProtectedPDF {
     private static final Logger logger = Logger.getLogger(PasswordProtectedPDF.class.getName());
-    static final String USER_PASSWORD = "27042020";
-    static final String OWNER_PASSWORD = "27042020";
+    static final String USER_PASSWORD = "111";
+    static final String OWNER_PASSWORD = "111";
 
     public static void main(String[] args) {
         try (
                 FileOutputStream out = new FileOutputStream(new File("1_protected.pdf"));
-                PdfReader reader = new PdfReader(new File("1.pdf").getPath())
-        ) {
+                PdfReader reader = new PdfReader(new File("1.pdf").getPath())) {
             PdfStamper stamper = new PdfStamper(reader, out);
 
             HashMap<String, String> info = new HashMap<>();
@@ -28,7 +27,8 @@ public class PasswordProtectedPDF {
                 logger.info("Key: " + key + ", Value: " + value);
             });
             stamper.setInfoDictionary(info);
-            stamper.setEncryption(USER_PASSWORD.getBytes(), OWNER_PASSWORD.getBytes(), PdfWriter.ALLOW_PRINTING, PdfWriter.ENCRYPTION_AES_128);
+            stamper.setEncryption(USER_PASSWORD.getBytes(), OWNER_PASSWORD.getBytes(), PdfWriter.ALLOW_PRINTING,
+                    PdfWriter.ENCRYPTION_AES_128);
 
             stamper.close();
             logger.info("Password protected PDF created successfully.");
