@@ -1,0 +1,6 @@
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: io.github.ozkanpakdil.redshift.CustomPostgreSQLDialect
