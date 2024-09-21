@@ -1,7 +1,3 @@
-/**
- * http://www.java-tips.org/other-api-tips/jni/simple-example-of-using-the-java-native-interface.html
- */
-
 class HelloWorld {
   static {
     System.loadLibrary("HelloWorld");

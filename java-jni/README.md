@@ -1,5 +1,10 @@
 # how to compile the hello world C code
-`make` should be enough to build the dll, which will generate `HelloWorld.dll`
+`make` should be enough to build the dll, which will generate `HelloWorld.dll` then it will run the commands too
+
+# how to create HelloWorld.h
+```
+javac -h . HelloWorld.java
+```
 
 # how to run the java code
 first compile `javac HelloWorld.java` then how to run `java -Djava.library.path=. HelloWorld` exampl e output below
