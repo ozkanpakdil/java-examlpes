@@ -9,6 +9,7 @@ gradle
 .mvn
 mvnw*
 *.classpath
+**.class
 **/.classpath
 **/target/
 **/.factorypath
