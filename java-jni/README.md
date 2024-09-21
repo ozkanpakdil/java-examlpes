@@ -17,4 +17,4 @@ Please enter your name.
 aaaa
 Hello from C aaaa
 ```
-chck the [c code](./HellowWorld.c)
+check the [c code](./HelloWorld.c)
