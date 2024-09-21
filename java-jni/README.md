@@ -1,4 +1,4 @@
-# how to compile the hellow world C code
+# how to compile the hello world C code
 `make` should be enough to build the dll, which will generate `HelloWorld.dll`
 
 # how to run the java code
