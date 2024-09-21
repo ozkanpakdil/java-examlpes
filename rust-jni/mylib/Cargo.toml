@@ -1,0 +1,11 @@
+[package]
+name = "mylib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jni = "0.21.1"
+
+# below makes cargo generate DLL
+[lib]
+crate-type = ["cdylib"]
