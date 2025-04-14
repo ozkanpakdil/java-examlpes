@@ -1,0 +1,1 @@
+example app for https://stackoverflow.com/questions/79557074/gluonfx-unsatisfiedlinkerror-use-dll-in-jar-when-running-native-image
