@@ -50,7 +50,6 @@
                     </resourcesList>
                     <nativeImageArgs>
                         <arg>--initialize-at-build-time=io.github.ozkanpakdil.JD2XX</arg>
-                        <arg>--initialize-at-run-time=io.github.ozkanpakdil.JD2XXEventListener</arg>
                         <arg>-H:+JNI</arg>
                         <arg>-H:+PrintClassInitialization</arg>
                         <arg>-H:TraceClassInitialization=true</arg>
