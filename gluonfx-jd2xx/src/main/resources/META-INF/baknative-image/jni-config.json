@@ -1,0 +1,33 @@
+[
+  {
+    "name": "io.github.ozkanpakdil.JD2XX",
+    "methods": [
+      { "name": "open", "parameterTypes": ["int"] },
+      {
+        "name": "open",
+        "parameterTypes": ["int"],
+        "jniSymbol": "Java_io_github_ozkanpakdil_JD2XX_open"
+      },
+      { "name": "close", "parameterTypes": [] },
+      { "name": "read", "parameterTypes": ["byte[]", "int", "int"] },
+      { "name": "write", "parameterTypes": ["byte[]", "int", "int"] },
+      { "name": "setBaudRate", "parameterTypes": ["int"] },
+      { "name": "setDataCharacteristics", "parameterTypes": ["byte", "byte", "byte"] },
+      { "name": "setFlowControl", "parameterTypes": ["short", "byte", "byte"] },
+      { "name": "setDtr", "parameterTypes": [] },
+      { "name": "clrDtr", "parameterTypes": [] },
+      { "name": "setRts", "parameterTypes": [] },
+      { "name": "clrRts", "parameterTypes": [] },
+      { "name": "getModemStatus", "parameterTypes": [] },
+      { "name": "getQueueStatus", "parameterTypes": [] },
+      { "name": "getDeviceInfo", "parameterTypes": [] },
+      { "name": "listDevices", "parameterTypes": [] },
+      { "name": "<init>", "parameterTypes": [] },
+      { "name": "loadLibraries", "parameterTypes": [] },
+      { "name": "registerEvent", "parameterTypes": ["int"] },
+      { "name": "signalEvent", "parameterTypes": [] },
+      { "name": "waitEvent", "parameterTypes": [] },
+      { "name": "<clinit>", "parameterTypes": [] }
+    ]
+  }
+]

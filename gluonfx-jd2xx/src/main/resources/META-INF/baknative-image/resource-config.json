@@ -1,0 +1,11 @@
+{
+  "resources": {
+    "includes": [
+      {"pattern": "\\Qjni/win/x86_64/jd2xx.dll\\E"},
+      {"pattern": "\\Qjni/win/x86_64/ftd2xx.dll\\E"},
+      {"pattern": "\\QJNI/.*\\E"},
+      {"pattern": ".*\\.dll$"}
+    ]
+  },
+  "bundles": []
+}
