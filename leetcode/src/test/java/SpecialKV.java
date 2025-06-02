@@ -53,6 +53,8 @@ public class SpecialKV {
         SpecialKV kv = new SpecialKV();
         kv.setExpiryWindow(1000);
         kv.put("a", 1);
+        kv.put("a", 9);
+        kv.put("a", 1);
         kv.put("b", 2);
         kv.put("b", 20);
         Thread.sleep(1000);

@@ -18,17 +18,20 @@ public class FFMSinTest {
 
         // Timing Java's Math.sin()
         long javaStartTime = System.nanoTime();
+        double result = 0;
         for (int i = 0; i < 1_000_000; i++) {
-            double result = Math.sin(angle);
+            result = Math.sin(angle);
         }
+        System.out.println(result);
         long javaEndTime = System.nanoTime();
         long javaDuration = javaEndTime - javaStartTime;
 
         // Timing C sin via FFM
         long ffmStartTime = System.nanoTime();
         for (int i = 0; i < 1_000_000; i++) {
-            double result = (double) sinHandle.invoke(angle);
+            result = (double) sinHandle.invoke(angle);
         }
+        System.out.println(result);
         long ffmEndTime = System.nanoTime();
         long ffmDuration = ffmEndTime - ffmStartTime;
 
