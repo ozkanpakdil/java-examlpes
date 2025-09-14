@@ -130,13 +130,13 @@ public class PostgresWithClientCertTest {
                 # TYPE  DATABASE        USER            ADDRESS                 METHOD
                 
                 # Allow local socket connections for init scripts and superuser tasks
-                local   all            all                                     trust
-                host    all            all             127.0.0.1/32            trust
-                host    all            all             ::1/128                 trust
+                local   all            all                                     scram-sha-256
+                host    all            all             127.0.0.1/32            scram-sha-256
+                host    all            all             ::1/128                 scram-sha-256
                 
                 # Require client certs for all TCP connections from anywhere
                 hostssl all            all             0.0.0.0/0               cert clientcert=verify-full
-                hostssl all            all             ::0/0                    cert clientcert=verify-full
+                hostssl all            all             ::0/0                   cert clientcert=verify-full
                 """;
         Files.writeString(pgHba, hba);
 
