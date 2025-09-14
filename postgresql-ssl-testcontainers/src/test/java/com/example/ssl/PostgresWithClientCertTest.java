@@ -178,8 +178,6 @@ public class PostgresWithClientCertTest {
         // 6) Start Postgres with default entrypoint; copy files into /docker-entrypoint-initdb.d
         pg = new PostgreSQLContainer<>("postgres:16")
                 .withDatabaseName("postgres")
-                .withUsername("postgres")
-                .withPassword("postgres")
                 .withStartupTimeout(Duration.ofSeconds(30)).withLogConsumer(new Slf4jLogConsumer(LOG).withSeparateOutputStreams())
                 // Provide init scripts and SSL assets
                 .withCopyFileToContainer(MountableFile.forHostPath(initSql), "/docker-entrypoint-initdb.d/01-init.sql")
@@ -194,10 +192,7 @@ public class PostgresWithClientCertTest {
         try {
             pg.start();
         } catch (Exception e) {
-            try {
-                System.out.println("[DEBUG_LOG] Container STDOUT/STDERR logs:\n" + pg.getLogs());
-            } catch (Exception ignored) {
-            }
+            System.out.println("[DEBUG_LOG] Container STDOUT/STDERR logs:\n" + pg.getLogs());
             throw e;
         }
     }
